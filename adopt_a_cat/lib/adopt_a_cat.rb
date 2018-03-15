@@ -1,5 +1,3 @@
-require "adopt_a_cat/version"
-
-module AdoptACat
-  # Your code goes here...
-end
+require_relative './adopt_a_cat/version'
+require_relative './adopt_a_cat/cats'
+require_relative './adopt_a_cat/cli'

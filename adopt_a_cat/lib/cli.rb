@@ -1,4 +1,0 @@
-class AdoptACat::CLI
-
-
-end
