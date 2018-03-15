@@ -2,7 +2,7 @@ class Cat
 
   attr_accessor :name, :breed, :gender, :age
 
-  def initialize(name = nil, breed = nil, gender = nil, age = nil)
+  def initialize
     @name = name
     @breed = breed
     @gender = gender
