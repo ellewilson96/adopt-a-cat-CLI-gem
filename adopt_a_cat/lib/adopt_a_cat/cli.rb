@@ -1,50 +1,29 @@
 class AdoptACat::CLI
-  attr_accessor :cats
 
   def call
+    list_cats
     start
   end
+
+  def list_cats
+    puts "Today's Available Cats"
+    @cats = AdoptACat::Cats.today
+    @cats.each.with_index(1) do |cat, i|
+    puts "#{i}. #{cat.name} - #{cat.age} - #{cat.breed}"
+   end
+ end
 
 
   def start
     input = nil
     if input != "exit"
-    puts "Are you interested in adopting a cat from Elle's Cat Rescue?"
+    puts "Would you like more information about any of our cats?"
     input = gets.strip.downcase
     case input
     when "yes"
-    return AdoptACat::Cats.today
     when "no"
       cancel
     end
   end
-  end
-
-  def list_cats
-      puts "Which Cat would you like to know more about?"
-    input = gets.strip.downcase
-    if input = @cats.name.downcase
-      cat_profile
-    else
-      cancel
-  end
-end
-
-  def cat_profile
-    puts
-    "Luna:
-    Animal ID:
-    Gender:
-    Age:
-    Size:
-    Housetrained
-    Description"
-end
-
-  def appointment
-  end
-
-  def cancel
-    puts "Thank you & Have a wonderful day"
   end
 end
