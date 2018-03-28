@@ -3,4 +3,5 @@
 require "bundler/setup"
 require "adopt_a_cat"
 
+AdoptACat::Cats.create
 AdoptACat::CLI.new.call

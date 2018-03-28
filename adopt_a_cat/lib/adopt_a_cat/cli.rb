@@ -8,7 +8,6 @@ class AdoptACat::CLI
 
   def list_cats
     puts "Today's Available Cats"
-    AdoptACat::Cats.create
     @cats = AdoptACat::Cats.all
     @cats.each.with_index(1) do |cat, i|
     puts "#{i}. #{cat.name}"
