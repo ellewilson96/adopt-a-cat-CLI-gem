@@ -1,8 +1,8 @@
 # AdoptACat
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/adopt_a_cat`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to the AdoptACat gem! With this gem, you will be able to access a list of cats from Anjellicle Cat Rescue, a local shelter in NYC. You may check out the cats and make an appointment by calling the shelter, or you may exit the program.
 
-TODO: Delete this and the text above, and describe your gem
+Please enter "bin/adopt" to run the program.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Enter "bin/adopt" to start the program. Take the time to check out all of the cats that are available - there are over 200! When asked to make an appointment, please type "yes" or "no" to respond to the prompt. If yes, you will receive Anjellicle Cat Rescue's contact information. If no, you will be asked if you'd like to see the list of cats again. If you no longer want to see the list of cats, enter "no" or "exit" and you will leave the shelter. 
 
 ## Development
 

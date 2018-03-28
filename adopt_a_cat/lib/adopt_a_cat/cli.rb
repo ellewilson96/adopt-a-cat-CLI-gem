@@ -36,7 +36,7 @@ end
   def cancel
     input = nil
     if input != "exit"
-      puts "Return to main menu?"
+      puts "Want to check out more cats?"
       input = gets.strip.downcase
       case input
       when "yes"
