@@ -7,10 +7,11 @@ class AdoptACat::CLI
 
   def list_cats
     puts "Today's Available Cats"
-    @cats = AdoptACat::Cats.today
+    AdoptACat::Cats.create
+    @cats = AdoptACat::Cats.all
     @cats.each do |cat|
-    puts "#{cat.name} - #{cat.age} - #{cat.breed} - #{cat.gender}"
-   end
+    puts "#{cat.name} - #{cat.breed} - #{cat.age} - #{cat.gender}"
+end
 end
 
   def start
