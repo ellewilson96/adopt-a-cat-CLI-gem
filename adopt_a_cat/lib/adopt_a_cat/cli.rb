@@ -9,8 +9,12 @@ class AdoptACat::CLI
     puts "Today's Available Cats"
     AdoptACat::Cats.create
     @cats = AdoptACat::Cats.all
-    @cats.each do |cat|
-    puts "#{cat.name} - #{cat.breed} - #{cat.age} - #{cat.gender}"
+    @cats.each.with_index(1) do |cat, i|
+    puts "#{i}. #{cat.name}"
+    puts "Age: #{cat.age}"
+    puts "Breed: #{cat.breed}"
+    puts "Gender: #{cat.gender}"
+    puts ""
 end
 end
 
@@ -38,7 +42,7 @@ end
       when "yes"
         call
       when "no"
-        puts "Please type exit to leave the cat shelter. Have a wonderful day!"
+        puts "You are now leaving the cat shelter. Have a wonderful day!"
       end
     end
   end
