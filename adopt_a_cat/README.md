@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-Enter "bin/adopt" to start the program. Take the time to check out all of the cats that are available - there are over 200! When asked to make an appointment, please type "yes" or "no" to respond to the prompt. If yes, you will receive Anjellicle Cat Rescue's contact information. If no, you will be asked if you'd like to see the list of cats again. If you no longer want to see the list of cats, enter "no" or "exit" and you will leave the shelter. 
+Enter "bin/adopt" to start the program. Take the time to check out all of the cats that are available - there are over 200! When you've decided which cat interests you, you may enter the number of the cat for more information about the cat. When asked to make an appointment, please type "yes" or "no" to respond to the prompt. If yes, you will receive Anjellicle Cat Rescue's contact information. If no, you will be asked if you'd like to see the list of cats again. If you no longer want to see the list of cats, enter "no" or "exit" and you will leave the shelter. 
 
 ## Development
 
