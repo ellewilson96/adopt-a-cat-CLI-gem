@@ -2,8 +2,6 @@ class AdoptACat::CLI
 
   def call
     list_cats
-    more_info
-    appointment
   end
 
   def list_cats
@@ -11,21 +9,20 @@ class AdoptACat::CLI
     @cats = AdoptACat::Cats.all
     @cats.each.with_index(1) do |cat, i|
     puts "#{i}. #{cat.name}"
-end
+    end
+    more_info
 end
 
   def more_info
     puts "Please enter the number of the cat you'd like more information about:"
     input = gets.strip
-    @cats.each.with_index(1) do |cat, i|
-    if input.to_i == i
-    puts ""
-    puts "#{i}. #{cat.name}"
-    puts "Age: #{cat.age}"
-    puts "Breed: #{cat.breed}"
-    puts "Gender: #{cat.gender}"
-    puts ""
-  end
+    i = @cats[input.to_i]
+    if i == nil
+      puts "Please choose a valid number."
+      more_info
+    elsif i != nil
+    puts "#{input}. #{i.name} - #{i.breed} - #{i.age} - #{i.gender}"
+    appointment
 end
 end
 
